@@ -61,7 +61,7 @@ class Index extends React.Component {
               <li>
                 <span className="icon major style1 fa-code"></span>
                 <h3><b>API Reference Web App</b><br/><sub><i>VSP Global</i></sub></h3>
-                <p>For this project, our team created an API Reference web application based on the <a href="https://swagger.io/" target="#">Swagger</a> specification. Instead of generating documentaion from the source code with Swagger annotations, our app allowed developers to easily and quickly write docs via our client.</p>
+                <p>For this project, our team created an API Reference web application based on the <a href="https://swagger.io/" target="#">Swagger</a> specification. Instead of generating documentation from the source code with Swagger annotations, our app allowed developers to easily and quickly write docs via our client.</p>
                 <p>Our web app was built with Angular, Java, and Spring.</p>
               </li>
               <li>
