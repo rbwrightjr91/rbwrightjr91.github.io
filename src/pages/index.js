@@ -8,6 +8,8 @@ import Header from '../components/Header'
 import Nav from '../components/Nav'
 import profile from '../assets/images/profile.jpg'
 
+import '../assets/css/index.css';
+
 class Index extends React.Component {
   constructor(props) {
     super(props);
