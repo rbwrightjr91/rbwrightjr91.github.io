@@ -75,7 +75,7 @@ class Index extends React.Component {
               </li>
               <li>
                 <span className="icon major style5 fa-gamepad"></span>
-                <h3>Chessnobyl<br/><i>CSU Sacramento</i></h3>
+                <h3><b>Chessnobyl</b><br/><i>CSU Sacramento</i></h3>
                 <p>Chessnobyl is an AI created for CSc 180, Intelligent Systems, at CSU Sacramento. It was created to play a custom chess variant created by our professor. Out of more than twenty student-created AIs, Chessnobyl finished in the top 5 after a multiday competition.</p>
                 <p>Chessnobyl was written in C++ and implements AI algorithms such as Minimax, Alpha Beta Pruning, and Iterative deepening.</p>
                 <p>The source code for Chessnobyl can be found <a href="https://github.com/rbwrightjr91/CSc-180---Chessnobyl/" target="#">on my GitHub</a>.</p>
