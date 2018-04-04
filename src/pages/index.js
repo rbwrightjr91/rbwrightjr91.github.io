@@ -71,32 +71,32 @@ class Index extends React.Component {
                 <span className="icon major style3 fa-copy"></span>
                 <h3><b>Provider and Lab Network API</b><br/><sub><i>VSP Global</i></sub></h3>
                 <p>The goal of this project was to convert existing Provider Network and Lab Network databases to SQL Server and write an API that would query the new databases. This allowed VSP to take the old databases off the mainframe, aiding in its eventual retirement. Our API would be under heavy use daily (tens of thousands of calls or more) so it was crucial that we use time and space saving techniques, such as caching and load balancing. We also tested our code extensively with JUnit.</p>
-                <p>The technologies we used for Provider and Lab Network API were Java, Spring, JPA, and SQL Server.</p>
+                <p>Provider and Lab Network API were written in Java. The technologies we used were Spring, JPA, and SQL Server.</p>
               </li>
               <li>
-                <span className="icon major style5 fa-chess-knight"></span>
-                <h3>Dolor nullam</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <span className="icon major style5 fa-gamepad"></span>
+                <h3>Chessnobyl<br/><i>CSU Sacramento</i></h3>
+                <p>Chessnobyl is an AI created for CSc 180, Intelligent Systems, at CSU Sacramento. It was created to play a custom chess variant created by our professor. Out of more than twenty student-created AIs, Chessnobyl finished in the top 5 after a multiday competition.</p>
+                <p>Chessnobyl was written in C++ and implements AI algorithms such as Minimax, Alpha Beta Pruning, and Iterative deepening.</p>
+                <p>The source code for Chessnobyl can be found <a href="https://github.com/rbwrightjr91/CSc-180---Chessnobyl/" target="#">on my GitHub</a>.</p>
               </li>
             </ul>
-            <footer className="major">
-              <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
-              </ul>
-            </footer>
           </section>
 
           <section id="contact" className="main special">
             <header className="major">
-              <h2>Congue imperdiet</h2>
-              <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+              <h2>Contact me</h2>
+              <p>Feel free to reach out to me on <br/>
+              </p>
+              <h3><ul className="icons">
+                <li><a href="https://linkedin.com/in/rbwrightjr91" target="#">LinkedIn</a></li>
+                <li><a href="https://twitter.com/rbwrightjr91" target="#">Twitter</a></li>
+                <li>and</li>
+                <li><a href="https://github.com/rbwrightjr91" target="#">GitHub</a></li>
+            </ul></h3>
             </header>
             <footer className="major">
-              <ul className="actions">
-                <li><Link to="/generic" className="button special">Get Started</Link></li>
-                <li><Link to="/generic" className="button">Learn More</Link></li>
-              </ul>
+              <p>Or shoot me an email at <a href="mailto:rbwrightjr91@gmail.com" target="#">rbwrightjr91@gmail.com</a></p>
             </footer>
           </section>
 
