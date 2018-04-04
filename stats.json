@@ -1,55 +1,31 @@
 {
   "assetsByChunkName": {
-    "path---my-second-post": [
-      "path---my-second-post-7983b80a23b5f29bef72.js",
-      "path---my-second-post-7983b80a23b5f29bef72.js.map"
-    ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-297dbca9b3a3cfc03f4b.js",
-      "component---src-pages-index-js-297dbca9b3a3cfc03f4b.js.map"
-    ],
-    "path---generic": [
-      "path---generic-12520c012e8532e9ed07.js",
-      "path---generic-12520c012e8532e9ed07.js.map"
+      "component---src-pages-index-js-fec87f4b94af4b48cca7.js",
+      "component---src-pages-index-js-fec87f4b94af4b48cca7.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
-    "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-41a5351e85547f54896b.js",
-      "component---src-templates-blog-post-js-41a5351e85547f54896b.js.map"
-    ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-fef9a2f89f6623f57f85.js",
-      "component---src-layouts-index-js-fef9a2f89f6623f57f85.js.map"
-    ],
-    "path---hi-folks": [
-      "path---hi-folks-a309f53935ee91fdf8e9.js",
-      "path---hi-folks-a309f53935ee91fdf8e9.js.map"
+      "component---src-layouts-index-js-5bab5ce4d7d5ba49072f.js",
+      "component---src-layouts-index-js-5bab5ce4d7d5ba49072f.js.map"
     ],
     "path---index": [
       "path---index-12520c012e8532e9ed07.js",
       "path---index-12520c012e8532e9ed07.js.map"
     ],
-    "path---hello-world": [
-      "path---hello-world-7547aa644e8a3171bd6a.js",
-      "path---hello-world-7547aa644e8a3171bd6a.js.map"
-    ],
-    "component---src-pages-generic-js": [
-      "component---src-pages-generic-js-e99cce484f38eaf34fbd.js",
-      "component---src-pages-generic-js-e99cce484f38eaf34fbd.js.map"
-    ],
     "commons": [
-      "commons-f5c6da832fb0bf0642e7.js",
+      "commons-e0b3729dc3fd67f7d695.js",
       "build-js-styles.css",
-      "commons-f5c6da832fb0bf0642e7.js.map",
+      "commons-e0b3729dc3fd67f7d695.js.map",
       "build-js-styles.css.map"
     ],
     "app": [
-      "app-9c746ad16375f9b5fd82.js",
+      "app-f59886e0c58aa7f39bc1.js",
       "build-js-styles.css",
-      "app-9c746ad16375f9b5fd82.js.map",
+      "app-f59886e0c58aa7f39bc1.js.map",
       "build-js-styles.css.map"
     ]
   }
