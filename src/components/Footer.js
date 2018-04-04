@@ -3,9 +3,11 @@ import Link from 'gatsby-link'
 
 import logo from '../assets/images/logo.svg';
 
+import '../assets/css/Footer.css';
+
 const Footer = (props) => (
     <footer id="footer">
-        <section className="main special">
+        <section id="find" className="main special">
             <h2>Find me</h2>
             <ul className="icons">
                 <li><a href="https://twitter.com/rbwrightjr91" target="#" className="icon fa-twitter alt"><span className="label">Twitter</span></a></li>
