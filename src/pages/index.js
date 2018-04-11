@@ -49,7 +49,7 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>About me</h2>
                 </header>
-                <p>I'm currently a student at Sacramento State studying Computer Science. I have a passion for software and web development, with experience in multiple languages and frameworks for both. Some of my hobbies include reading books and blogs, music, playing board and video games, and watching sports.</p>
+                <p>I'm currently a student at Sacramento State studying Computer Science. I have a passion for software and web development, with experience in multiple languages and frameworks for both. Some of my hobbies include reading books and blogs, music, playing board and video games, and watching sports (hockey and baseball being my favorites).</p>
               </div>
               <span className="image"><img id="profile" src={profile} alt="" /></span>
             </div>
