@@ -71,7 +71,13 @@ class Index extends React.Component {
                 <h3><b>Provider and Lab Network API</b><br/><sub><i>VSP Global</i></sub></h3>
                 <p>The goal of this project was to convert existing Provider Network and Lab Network databases to SQL Server and write an API that would query the new databases. This allowed VSP to take the old databases off the mainframe, aiding in its eventual retirement. Our API would be under heavy use daily (tens of thousands of calls or more) so it was crucial that we use time and space saving techniques, such as caching and load balancing. We also tested our code extensively with JUnit.</p>
                 <p>Provider and Lab Network API were written in Java. The technologies we used were Spring, JPA, and SQL Server.</p>
-              </li>
+              </li>              
+              <li>
+                <span className="icon major style3 fa-search"></span>
+                <h3><b>University Union Lost & Found</b><br/><sub><i>CSU Sacramento</i></sub></h3>
+                <p>For Senior Project, my team and I are developing a lost and found web application for the main student center on campus, the University Union. The first semester was spent defining the requirements of the software (in the form of user stories), creating a backlog of features, and prioritizing those features. This semester, we are developing the application and using the SCRUM methodology in order to make sure the software will meet the demands of our client and be delivered on time.</p>
+                <p>University Union Lost and Found was built with Angular, Java, Spring, JPA, and MySQL.</p>
+              </li>              
               <li>
                 <span className="icon major style5 fa-gamepad"></span>
                 <h3><b>Chessnobyl</b><br/><sub><i>CSU Sacramento</i></sub></h3>
