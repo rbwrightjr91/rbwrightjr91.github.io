@@ -49,7 +49,7 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>About me</h2>
                 </header>
-                <p>I'm currently a student at Sacramento State studying Computer Science. I have a passion for software and web development, with experience in multiple languages and frameworks for both. Some of my hobbies include reading books and blogs, music, playing board and video games, and watching sports (hockey and baseball being my favorites).</p>
+                <p>I'm currently an Associate DevOps Engineer at PowerSchool, located in Folsom, California. I have a passion for web development, with experience in multiple languages and frameworks for both. In May 2019, I graduated Cum Laude from California State University, Sacramento with a Bachelor of Science in Computer Science and a certificate in Game Engineering. Some of my hobbies include reading books and blogs, lsitening to music, playing board and video games, and watching sports (hockey and baseball being my favorites).</p>
               </div>
               <span className="image"><img id="profile" src={profile} alt="" /></span>
             </div>
@@ -61,7 +61,13 @@ class Index extends React.Component {
             </header>
             <ul className="features">
               <li>
-                <span className="icon major style1 fa-code"></span>
+                <span className="icon major style1 fa-expeditedssl"></span>
+                <h3><b>Lemur Certificate Manager</b><br/><sub><i>PowerSchool</i> (current project)</sub></h3>
+                <p>Working with another DevOps Engineer to implement the Open Source certificate manager <a href="https://github.com/Netflix/Lemur">"Lemur"</a> created by Netflix. This involved demoing a proof of concept, as well writing plugins to extend Lemur and allow it to integrate with the API’s used by the Certificate Authorities we use.</p>
+                <p>Lemur is written in Python and we updated the built-in front end by upgrading it from AngularJS to Angular 7.</p>
+              </li>
+              <li>
+                <span className="icon major style2 fa-code"></span>
                 <h3><b>API Reference Web App</b><br/><sub><i>VSP Global</i></sub></h3>
                 <p>For this project, our team created an API Reference web application based on the <a href="https://swagger.io/" target="#">Swagger</a> specification. Instead of generating documentation from the source code with Swagger annotations, our app allowed developers to easily and quickly write docs via our client.</p>
                 <p>Our web app was built with Angular, Java, and Spring.</p>
@@ -73,7 +79,7 @@ class Index extends React.Component {
                 <p>Provider and Lab Network API were written in Java. The technologies we used were Spring, JPA, and SQL Server.</p>
               </li>              
               <li>
-                <span className="icon major style3 fa-search"></span>
+                <span className="icon major style4 fa-search"></span>
                 <h3><b>University Union Lost & Found</b><br/><sub><i>CSU Sacramento</i></sub></h3>
                 <p>For Senior Project, my team and I are developing a lost and found web application for the main student center on campus, the University Union. The first semester was spent defining the requirements of the software (in the form of user stories), creating a backlog of features, and prioritizing those features. This semester, we are developing the application and using the SCRUM methodology in order to make sure the software will meet the demands of our client and be delivered on time.</p>
                 <p>University Union Lost and Found was built with Angular, Java, Spring, JPA, and MySQL.</p>
