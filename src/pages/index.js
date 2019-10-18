@@ -49,7 +49,7 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>About me</h2>
                 </header>
-                <p>I'm currently an Associate DevOps Engineer at PowerSchool, located in Folsom, California. I have a passion for web development, with experience in multiple languages and frameworks for both. In May 2019, I graduated Cum Laude from California State University, Sacramento with a Bachelor of Science in Computer Science and a certificate in Game Engineering. Some of my hobbies include reading books and blogs, listening to music, playing board and video games, and watching sports (hockey and baseball being my favorites).</p>
+                <p>I'm currently an Associate DevOps Engineer at PowerSchool, located in Folsom, California. I have a passion for web development, with experience in multiple languages and frameworks for both. In May 2019, I graduated Cum Laude from California State University, Sacramento with a Bachelor of Science in Computer Science and a certificate in Game Engineering. Some of my hobbies include <a href="https://www.goodreads.com/user/show/16552310-richard-wright" target="_blank">reading books</a> and blogs, <a href="https://open.spotify.com/user/123095168?si=q24pdybvRneL2V-VxLWRcg" target="_blank">listening to music</a>, playing board and video games, and watching sports (hockey and baseball being my favorites).</p>
               </div>
               <span className="image"><img id="profile" src={profile} alt="" /></span>
             </div>
