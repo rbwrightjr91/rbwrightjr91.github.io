@@ -49,7 +49,7 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>About me</h2>
                 </header>
-                <p>I'm currently an Associate DevOps Engineer at PowerSchool, located in Folsom, California. I have a passion for web development, with experience in multiple languages and frameworks for both. In May 2019, I graduated Cum Laude from California State University, Sacramento with a Bachelor of Science in Computer Science and a certificate in Game Engineering. Some of my hobbies include reading books and blogs, lsitening to music, playing board and video games, and watching sports (hockey and baseball being my favorites).</p>
+                <p>I'm currently an Associate DevOps Engineer at PowerSchool, located in Folsom, California. I have a passion for web development, with experience in multiple languages and frameworks for both. In May 2019, I graduated Cum Laude from California State University, Sacramento with a Bachelor of Science in Computer Science and a certificate in Game Engineering. Some of my hobbies include reading books and blogs, listening to music, playing board and video games, and watching sports (hockey and baseball being my favorites).</p>
               </div>
               <span className="image"><img id="profile" src={profile} alt="" /></span>
             </div>
@@ -81,7 +81,7 @@ class Index extends React.Component {
               <li>
                 <span className="icon major style4 fa-search"></span>
                 <h3><b>University Union Lost & Found</b><br/><sub><i>CSU Sacramento</i></sub></h3>
-                <p>For Senior Project, my team and I are developing a lost and found web application for the main student center on campus, the University Union. The first semester was spent defining the requirements of the software (in the form of user stories), creating a backlog of features, and prioritizing those features. This semester, we are developing the application and using the SCRUM methodology in order to make sure the software will meet the demands of our client and be delivered on time.</p>
+                <p>For Senior Project, my team and I developed a lost and found web application for the main student center on campus, the University Union. The first semester was spent defining the requirements of the software (in the form of user stories), creating a backlog of features, and prioritizing those features. The second semester, we developed the application, using the SCRUM methodology in order to make sure the software met the demands of our client and was delivered on time.</p>
                 <p>University Union Lost and Found was built with Angular, Java, Spring, JPA, and MySQL.</p>
               </li>              
               <li>
