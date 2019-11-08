@@ -62,7 +62,7 @@ class Index extends React.Component {
             <ul className="features">
               <li>
                 <span className="icon major style5 fa-cloud"></span>
-                <h3><b>Personal Cloud Storage</b><br/><sub><i>PowerSchool</i> (current project)</sub></h3>
+                <h3><b>Personal Cloud Storage</b><br/><sub><i>Personal</i> (current project)</sub></h3>
                 <p>Currently implenting my own personal cloud storage solution with <a href="https://www.nextcloud.com" target="#">NextCloud</a> hosted on a Raspberry Pi 4 running Ubuntu 18.04 LTS.</p>
               </li>
               <li>
