@@ -39,7 +39,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build && cp ./CNAME ./public",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
-    "deploy": "gh-pages -d public -b master"
+    "deploy": "gh-pages -d public -b master && rm -rf ./public"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0"
