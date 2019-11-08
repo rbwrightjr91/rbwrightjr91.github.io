@@ -61,6 +61,11 @@ class Index extends React.Component {
             </header>
             <ul className="features">
               <li>
+                <span className="icon major style5 fa-cloud"></span>
+                <h3><b>Personal Cloud Storage</b><br/><sub><i>PowerSchool</i> (current project)</sub></h3>
+                <p>Currently implenting my own personal cloud storage solution with <a href="https://www.nextcloud.com" target="#">NextCloud</a> hosted on a Raspberry Pi 4 running Ubuntu 18.04 LTS.</p>
+              </li>
+              <li>
                 <span className="icon major style1 fa-expeditedssl"></span>
                 <h3><b>Lemur Certificate Manager</b><br/><sub><i>PowerSchool</i> (current project)</sub></h3>
                 <p>Working with another DevOps Engineer to implement the Open Source certificate manager <a href="https://github.com/Netflix/Lemur">"Lemur"</a> created by Netflix. This involved demoing a proof of concept, as well writing plugins to extend Lemur and allow it to integrate with the API’s used by the Certificate Authorities we use.</p>
@@ -107,7 +112,7 @@ class Index extends React.Component {
             </ul></h3>
             </header>
             <footer className="major">
-              <p>Or shoot me an email at <a href="mailto:rbwrightjr91@gmail.com" target="#">rbwrightjr91@gmail.com</a></p>
+              <p>Or shoot me an email at <a href="mailto:me@rbwrightjr91.dev" target="#">me@rbwrightjr91.dev</a></p>
             </footer>
           </section>
 
