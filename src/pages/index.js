@@ -49,7 +49,7 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>About me</h2>
                 </header>
-                <p>I'm currently an Associate DevOps Engineer at PowerSchool, located in Folsom, California. I have a passion for web development, with experience in multiple languages and frameworks for both. In May 2019, I graduated Cum Laude from California State University, Sacramento with a Bachelor of Science in Computer Science and a certificate in Game Engineering. Some of my hobbies include <a href="https://www.goodreads.com/user/show/16552310-richard-wright" target="_blank">reading books</a> and blogs, <a href="https://open.spotify.com/user/123095168?si=q24pdybvRneL2V-VxLWRcg" target="_blank">listening to music</a>, playing board and video games, and watching sports (hockey and baseball being my favorites).</p>
+                <p>I'm currently an Associate Cloud Ops Engineer at PowerSchool, located in Folsom, California. I have a passion for web development, with experience in multiple languages and frameworks for both. In May 2019, I graduated Cum Laude from California State University, Sacramento with a Bachelor of Science in Computer Science and a certificate in Game Engineering. Some of my hobbies include <a href="https://www.goodreads.com/user/show/16552310-richard-wright" target="_blank">reading books</a> and blogs, <a href="https://open.spotify.com/user/123095168?si=q24pdybvRneL2V-VxLWRcg" target="_blank">listening to music</a>, playing board and video games, and watching sports (hockey and baseball being my favorites).</p>
               </div>
               <span className="image"><img id="profile" src={profile} alt="" /></span>
             </div>
@@ -60,10 +60,16 @@ class Index extends React.Component {
               <h2>Projects</h2>
             </header>
             <ul className="features">
+            <li>
+                <span className="icon major style4 fa-desktop"></span>
+                <h3><b><i>Project Unicorn</i> Updates</b><br/><sub><i>PowerSchool</i></sub></h3>
+                <p>Project Unicorn is an <i>Infrastructure as Code</i> project that deploys non-production instances of our core product for Dev and QA teams to develop/test against. Recently, our organization migrated to a new code repository (GitLab) and I was tasked with updating depcreated dependency usages in the Project Unicorn code base. To do this, I had to read code that I did not write, understand how it functioned, and update code that used the deprecated dependency versions. This involved a lot of testing and debugging code and code reviews with Senior Engineers on my team.</p>
+                <p>Project Unicorn is written in Python and is implemented as a GitLab CI Pipeline.</p>
+              </li>
               <li>
                 <span className="icon major style5 fa-cloud"></span>
-                <h3><b>Personal Cloud Storage</b><br/><sub><i>Personal</i> (current project)</sub></h3>
-                <p>Currently implenting my own personal cloud storage solution with <a href="https://www.nextcloud.com" target="#">NextCloud</a> hosted on a Raspberry Pi 4 running Ubuntu 18.04 LTS.</p>
+                <h3><b>Personal Cloud Storage</b><br/><sub><i>Personal</i></sub></h3>
+                <p>Implemented my own personal cloud storage solution with <a href="https://www.nextcloud.com" target="#">NextCloud</a> hosted on a Raspberry Pi 4 running Ubuntu 18.04 LTS</p>
               </li>
               <li>
                 <span className="icon major style1 fa-expeditedssl"></span>
@@ -88,13 +94,6 @@ class Index extends React.Component {
                 <h3><b>University Union Lost & Found</b><br/><sub><i>CSU Sacramento</i></sub></h3>
                 <p>For Senior Project, my team and I developed a lost and found web application for the main student center on campus, the University Union. The first semester was spent defining the requirements of the software (in the form of user stories), creating a backlog of features, and prioritizing those features. The second semester, we developed the application, using the SCRUM methodology in order to make sure the software met the demands of our client and was delivered on time.</p>
                 <p>University Union Lost and Found was built with Angular, Java, Spring, JPA, and MySQL.</p>
-              </li>              
-              <li>
-                <span className="icon major style5 fa-gamepad"></span>
-                <h3><b>Chessnobyl</b><br/><sub><i>CSU Sacramento</i></sub></h3>
-                <p>Chessnobyl is an AI programmed for CSc 180, Intelligent Systems, at CSU Sacramento. It was created to play a custom chess variant imagined by our professor. Out of more than twenty student-created AIs, Chessnobyl finished in the top 5 after a multiday competition.</p>
-                <p>Chessnobyl was written in C++ and implements AI algorithms such as Minimax, Alpha Beta Pruning, and Iterative deepening.</p>
-                <p>The source code for Chessnobyl can be found <a href="https://github.com/rbwrightjr91/CSc-180---Chessnobyl/" target="#">on my GitHub</a>.</p>
               </li>
             </ul>
           </section>
