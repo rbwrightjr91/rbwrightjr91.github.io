@@ -1,10 +1,10 @@
 module.exports = {
-  siteTitle: 'Hi! I\'m Francisco!',
-  siteDescription: `Create your online curriculum in just a few minutes with this starter`,
-  keyWords: ['gatsbyjs', 'react', 'curriculum'],
-  authorName: 'Francisco Santos',
-  twitterUsername: '_franciscodf',
-  githubUsername: 'santosfrancisco',
+  siteTitle: 'Richard Wright',
+  siteDescription: `Richard Wright Personal Website`,
+  keyWords: ['gatsbyjs', 'react', 'developer', 'web dev', 'devops'],
+  authorName: 'Richard Wright',
+  twitterUsername: 'rbwrightjr91',
+  githubUsername: 'rbwrightjr91',
   authorAvatar: '/images/avatar.jpeg',
   authorDescription: `Developer, passionate about what I do. Always interested in how the sites were made, I started to study HTML by hobby. <br />
     In 2012 I started working as a support technician and I approached the developers.
