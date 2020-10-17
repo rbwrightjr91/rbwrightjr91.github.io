@@ -6,78 +6,73 @@ module.exports = {
   twitterUsername: 'rbwrightjr91',
   githubUsername: 'rbwrightjr91',
   authorAvatar: '/images/avatar.jpeg',
-  authorDescription: `Developer, passionate about what I do. Always interested in how the sites were made, I started to study HTML by hobby. <br />
-    In 2012 I started working as a support technician and I approached the developers.
-    In 2015, I started to study C # and started to contribute with the team giving maintenance in an application in C # and .NET. <br />
-    I currently work as a frontend developer and mainly work with <strong>Javascript, NodeJS e React.</strong>`,
+  authorDescription: `I'm currently a Senior Associate Cloud Ops Engineer at PowerSchool, located in Folsom, California. In May 2019 I graduated Cum Laude from California State University, Sacramento with a Bachelor of Science in Computer Science and a certificate in Game Engineering. Some of my hobbies include <a href="https://www.goodreads.com/user/show/16552310-richard-wright" target="_blank">reading books</a> and blogs, <a href="https://open.spotify.com/user/123095168?si=q24pdybvRneL2V-VxLWRcg" target="_blank">listening to music</a>, playing board and video games, and watching sports (hockey and baseball being my favorites).`,
   skills: [
     {
-      name: 'HTML',
-      level: 70
-    },
-    {
-      name: 'CSS',
-      level: 60
-    },
-    {
       name: 'Javascript',
-      level: 50
+      level: 60
     },
     {
       name: 'NodeJs',
-      level: 40
+      level: 65
     },
     {
-      name: 'React',
-      level: 60
+      name: 'Angular 2+',
+      level: 75
     },
     {
       name: 'Git',
       level: 70
+    },
+    {
+      name: 'Python',
+      level: 50
+    },
+    {
+      name: 'Ansible',
+      level: 35
+    },
+    {
+      name: 'Docker',
+      level: 35
+    },
+    {
+      name: 'SQL',
+      level: 40
     },
     /* more skills here */
   ],
   jobs: [
     /* more jobs here */
     {
-      company: "Gympass",
+      company: "PowerSchool",
       begin: {
-        month: 'sep',
+        month: 'May',
         year: '2019'
       },
       duration: null,
-      occupation: "Frontend developer",
-      description: "I am part of the Corporate team, responsible for the development and maintenance of the employee management platform, giving more and more autonomy to partner companies."
+      occupation: "Cloud Ops Engineer",
+      description: "Responsible for supporting hosted customers and for software installations and configuration, continuous systems analysis, technical customer support, systems administration and database administration for the SaaS server technologies used in the hosted environment."
   
     },  {
-      company: "Lendico",
+      company: "River City Petroleum",
       begin: {
-        month: 'apr',
+        month: 'May',
         year: '2018'
       },
-      duration: null,
-      occupation: "Frontend developer",
-      description: "I integrate the Frontend team responsible for developing and maintaining the online lending platform."
+      duration: '4 months',
+      occupation: "IT Analyst",
+      description: "General IT Support & Systems Administration, as well as WordPress plugin development "
   
     }, {
-      company: "Anapro",
+      company: "VSP",
       begin: {
-        month: 'dec',
-        year: '2016'
+        month: 'May',
+        year: '2017'
       },
-      duration: '1 yr e 5 mos',
-      occupation: "Fullstack developer",
-      description: "Development and maintenance, corrective and preventive, of web applications for the real estate market."
-    }, {
-      company: "Anapro",
-      begin: {
-        month: 'set',
-        year: '2012'
-      },
-      duration: '4 yrs e 3 mos',
-      occupation: "Support Technician",
-      description: "Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool."
-  
+      duration: '10 months',
+      occupation: "Web Development Intern",
+      description: "Web Application development using Angular, Java, and Spring."
     },
   ],
   portifolio: [
@@ -94,21 +89,21 @@ module.exports = {
     /* more portifolio items here */
   ],
   social: {
-    twitter: "https://twitter.com/_franciscodf",
-    linkedin: "https://www.linkedin.com/in/santos-francisco",
-    github: "https://github.com/santosfrancisco",
-    email: "yoshi.df@gmail.com"
+    twitter: "https://twitter.com/rbwrightjr91",
+    linkedin: "https://www.linkedin.com/in/rbwrightjr91",
+    github: "https://github.com/rbwrightjr91",
+    email: "me@rbwrightjr91.dev"
   },
-  siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
-  pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
+  siteUrl: 'https://rbwrightjr91.dev',
+  pathPrefix: '', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: 'UA-000000000-1',
+  googleAnalyticsId: '',
   background_color: '#ffffff',
   theme_color: '#25303B',
   fontColor: "#000000cc",
   enableDarkmode: true, // If true, enables dark mode switch
   display: 'minimal-ui',
-  icon: 'src/assets/gatsby-icon.png',
+  icon: '',
   headerLinks: [
     {
       label: 'Home',
