@@ -97,13 +97,13 @@ module.exports = {
   siteUrl: 'https://rbwrightjr91.dev',
   pathPrefix: '', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: '',
+  googleAnalyticsId: 'UA-000000000-1',
   background_color: '#ffffff',
   theme_color: '#25303B',
   fontColor: "#000000cc",
   enableDarkmode: true, // If true, enables dark mode switch
   display: 'minimal-ui',
-  icon: '',
+  icon: '/images/favicon.ico',
   headerLinks: [
     {
       label: 'Home',
