@@ -77,15 +77,11 @@ module.exports = {
   ],
   portifolio: [
     {
-      image: "/images/gatsby-starter-cv.png",
-      description: "Gatsby starter CV template",
-      url: "https://www.gatsbyjs.org/starters/santosfrancisco/gatsby-starter-cv/"
-    },
-    {
-      image: "/images/awesome-grid.png",
-      description: "Responsive grid for ReactJS",
-      url: "https://github.com/santosfrancisco/react-awesome-styled-grid"
-    },
+      image: "",
+      description: "Project Unicorn Updates",
+      organization: "PowerSchool",
+      details: "<p>Project Unicorn is an <i>Infrastructure as Code</i> project that deploys non-production instances of our core product for Dev and QA teams to develop/test against. Recently, our organization migrated to a new code repository (GitLab) and I was tasked with updating depcreated dependency usages in the Project Unicorn code base. To do this, I had to read code that I did not write, understand how it functioned, and update code that used the deprecated dependency versions. This involved a lot of testing and debugging code and code reviews with Senior Engineers on my team.</p><p>Project Unicorn is written in Python and is implemented as a GitLab CI Pipeline.</p>",
+    }
     /* more portifolio items here */
   ],
   social: {
