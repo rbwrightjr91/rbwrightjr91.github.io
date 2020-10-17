@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa"
+import { FaGithub, FaTwitter, FaLinkedin, FaGitlab } from "react-icons/fa"
 import { config } from 'react-awesome-styled-grid';
 import siteConfig from '../../../data/siteConfig'
 
@@ -13,7 +13,7 @@ const Link = styled(({ className, icon: Icon, color, ...props }) => (
   >
     <Icon color={color} size={32} />
   </a>
-)).attrs(props => ({ color: props.theme.colors.primary }))`
+)).attrs(props => ({ color: props.theme.colors.secondary }))`
   & + & {
     margin-left: 24px;
   }
@@ -24,11 +24,14 @@ const Footer = ({ className }) => {
     twitter,
     linkedin,
     github,
+    gitlab,
   } = siteConfig.social
   return (
     <footer className={className}>
-      {`© ${new Date().getFullYear()} ${siteConfig.authorName}`}
+      {`Last Updated: ${siteConfig.lastUpdated}`}
+      <div>Design: Gatsby Starter CV by Santos Francisco</div>
       <div>
+        {gitlab && <Link href={gitlab} icon={FaGitlab} />}
         {github && <Link href={github} icon={FaGithub} />}
         {twitter && <Link href={twitter} icon={FaTwitter} />}
         {linkedin && <Link href={linkedin} icon={FaLinkedin} />}

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter, FaGitlab } from "react-icons/fa"
 import siteConfig from '../../data/siteConfig'
 import { withPrefix } from "gatsby"
 import loadable from '@loadable/component'
@@ -53,6 +53,9 @@ const Home = ({ className, location }) => {
                 alt='user avatar'
               />
               <div className="social">
+                {siteConfig.social.gitlab && <a className="social-link gitlab" href={siteConfig.social.gitlab}>
+                  <FaGitlab className="social-icon" size="32" />
+                </a>}
                 {siteConfig.social.github && <a className="social-link github" href={siteConfig.social.github}>
                   <FaGithub className="social-icon" size="32" />
                 </a>}
@@ -112,7 +115,7 @@ export default styled(Home)`
 
   .social-link {
     padding: 8px;
-    color: #555;
+    color: #00adb5;
   }
 
   a.social-link.twitter:hover {
@@ -121,6 +124,10 @@ export default styled(Home)`
 
   a.social-link.github:hover {
     color: #24292e;
+  }
+  
+  a.social-link.gitlab:hover {
+    color: #fc6d27;
   }
 
   a.social-link.linkedin:hover {

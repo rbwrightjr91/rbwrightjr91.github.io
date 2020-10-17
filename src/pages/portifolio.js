@@ -54,16 +54,14 @@ const Portifolio = ({ className, location }) => {
                 key={job.description}
                 align="center"
               >
-                <JobCard
-                  as={job.url ? "a" : "div"}
-                  href={job.url}
-                  target="_blank"
-                >
-                  <Image src={withPrefix(job.image)} />
-                  <p>{job.description}<br/><sub><i>{job.organization}</i></sub></p>
-                  
-                  <p>{job.details}</p>
-                </JobCard>
+                <div>
+                  <h4>{job.description}</h4>
+                  <sub><i>{job.organization}</i></sub>
+                  <br/>
+                  {job.details.map((detail, i) => (
+                    <p key={job.description + i}>{detail}</p>
+                  ))}
+                </div>
               </Col>
             ))}
           </Row>
