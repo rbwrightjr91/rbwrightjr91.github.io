@@ -105,7 +105,7 @@ module.exports = {
   siteUrl: 'https://rbwrightjr91.dev',
   pathPrefix: '', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: 'UA-000000000-1',
+  googleAnalyticsId: 'UA-180668049-1',
   background_color: '#ffffff',
   theme_color: '#25303B',
   fontColor: "#000000cc",

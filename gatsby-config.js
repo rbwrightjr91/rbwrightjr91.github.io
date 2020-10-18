@@ -29,6 +29,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: config.googleAnalyticsId,
+        head: true
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
