@@ -24,6 +24,7 @@ const Layout = ({ children, location }) => {
     animateOnScroll()
   }, [])
   return (
+  // <ThemeProvider theme={themes[theme || 'light']}>
   <ThemeProvider theme={themes[theme || 'light']}>
     <ResetCSS />
     <GlobalStyle />
