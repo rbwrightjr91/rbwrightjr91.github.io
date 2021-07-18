@@ -44,39 +44,39 @@ module.exports = {
     },
     /* more skills here */
   ],
-  jobs: [
-    /* more jobs here */
-    {
-      company: "PowerSchool",
-      begin: {
-        month: 'May',
-        year: '2019'
-      },
-      duration: null,
-      occupation: "Cloud Ops Engineer",
-      description: "Responsible for supporting hosted customers and for software installations and configuration, continuous systems analysis, technical customer support, systems administration and database administration for the SaaS server technologies used in the hosted environment."
-  
-    },  {
-      company: "River City Petroleum",
-      begin: {
-        month: 'May',
-        year: '2018'
-      },
-      duration: '4 months',
-      occupation: "IT Analyst",
-      description: "General IT Support & Systems Administration, as well as WordPress plugin development "
-  
-    }, {
-      company: "VSP",
-      begin: {
-        month: 'May',
-        year: '2017'
-      },
-      duration: '10 months',
-      occupation: "Web Development Intern",
-      description: "Web Application development using Angular, Java, and Spring."
-    },
-  ],
+  // jobs: [
+  //   /* more jobs here */
+  //   {
+  //     company: "PowerSchool",
+  //     begin: {
+  //       month: 'May',
+  //       year: '2019'
+  //     },
+  //     duration: null,
+  //     occupation: "Cloud Ops Engineer",
+  //     description: "Responsible for supporting hosted customers and for software installations and configuration, continuous systems analysis, technical customer support, systems administration and database administration for the SaaS server technologies used in the hosted environment."
+
+  //   },  {
+  //     company: "River City Petroleum",
+  //     begin: {
+  //       month: 'May',
+  //       year: '2018'
+  //     },
+  //     duration: '4 months',
+  //     occupation: "IT Analyst",
+  //     description: "General IT Support & Systems Administration, as well as WordPress plugin development "
+
+  //   }, {
+  //     company: "VSP",
+  //     begin: {
+  //       month: 'May',
+  //       year: '2017'
+  //     },
+  //     duration: '10 months',
+  //     occupation: "Web Development Intern",
+  //     description: "Web Application development using Angular, Java, and Spring."
+  //   },
+  // ],
   portifolio: [
     {
       description: "Project Unicorn Updates",
