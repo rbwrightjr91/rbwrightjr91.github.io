@@ -12,35 +12,35 @@ module.exports = {
   skills: [
     {
       name: 'Javascript',
-      level: 60
+      level: 60,
     },
     {
       name: 'NodeJs',
-      level: 65
+      level: 65,
     },
     {
       name: 'Angular 2+',
-      level: 75
+      level: 75,
     },
     {
       name: 'Git',
-      level: 70
+      level: 70,
     },
     {
       name: 'Python',
-      level: 50
+      level: 50,
     },
     {
       name: 'Ansible',
-      level: 35
+      level: 35,
     },
     {
       name: 'Docker',
-      level: 35
+      level: 35,
     },
     {
       name: 'SQL',
-      level: 40
+      level: 40,
     },
     /* more skills here */
   ],
@@ -79,28 +79,28 @@ module.exports = {
   // ],
   portifolio: [
     {
-      description: "Project Unicorn Updates",
-      organization: "PowerSchool",
+      description: 'Project Unicorn Updates',
+      organization: 'PowerSchool',
       details: [
-        "Project Unicorn is an Infrastructure as Code project that deploys non-production instances of our core product for Dev and QA teams to develop/test against. Recently, our organization migrated to a new code repository (GitLab) and I was tasked with updating depcreated dependency usages in the Project Unicorn code base. To do this, I had to read code that I did not write, understand how it functioned, and update code that used the deprecated dependency versions. This involved a lot of testing and debugging code and code reviews with Senior Engineers on my team.",
-        "Project Unicorn is written in Python and is implemented as a GitLab CI Pipeline."
-      ]
+        'Project Unicorn is an Infrastructure as Code project that deploys non-production instances of our core product for Dev and QA teams to develop/test against. Recently, our organization migrated to a new code repository (GitLab) and I was tasked with updating depcreated dependency usages in the Project Unicorn code base. To do this, I had to read code that I did not write, understand how it functioned, and update code that used the deprecated dependency versions. This involved a lot of testing and debugging code and code reviews with Senior Engineers on my team.',
+        'Project Unicorn is written in Python and is implemented as a GitLab CI Pipeline.',
+      ],
     },
     {
-      description: "Personal Cloud Storage",
-      organization: "Personal",
+      description: 'Personal Cloud Storage',
+      organization: 'Personal',
       details: [
-        "Implemented my own personal cloud storage solution with NextCloud hosted on a Raspberry Pi 4 running Ubuntu 18.04 LTS",
-      ]
+        'Implemented my own personal cloud storage solution with NextCloud hosted on a Raspberry Pi 4 running Ubuntu 18.04 LTS',
+      ],
     },
     /* more portifolio items here */
   ],
   social: {
-    twitter: "https://twitter.com/rbwrightjr91",
-    linkedin: "https://www.linkedin.com/in/rbwrightjr91",
-    github: "https://github.com/rbwrightjr91",
-    gitlab: "https://gitlab.com/rbwrightjr91",
-    email: "me@rbwrightjr91.dev"
+    twitter: 'https://twitter.com/rbwrightjr91',
+    linkedin: 'https://www.linkedin.com/in/rbwrightjr91',
+    github: 'https://github.com/rbwrightjr91',
+    gitlab: 'https://gitlab.com/rbwrightjr91',
+    email: 'me@rbwrightjr91.dev',
   },
   siteUrl: 'https://rbwrightjr91.dev',
   pathPrefix: '', // Note: it must *not* have a trailing slash.
@@ -108,7 +108,7 @@ module.exports = {
   googleAnalyticsId: 'UA-180668049-1',
   background_color: '#ffffff',
   theme_color: '#25303B',
-  fontColor: "#000000cc",
+  fontColor: '#000000cc',
   enableDarkmode: true, // If true, enables dark mode switch
   display: 'minimal-ui',
   icon: 'src/assets/favicon-16x16.png',
@@ -121,5 +121,6 @@ module.exports = {
     //   label: 'Portifolio',
     //   url: '/portifolio',
     // }
-  ]
+  ],
 }
+

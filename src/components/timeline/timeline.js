@@ -1,48 +1,53 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { config } from 'react-awesome-styled-grid'
 
-export default class Timeline extends React.Component {
+const Timeline = ({ className }) => {
+  const [jobs, setJobs] = useState([])
 
-  constructor(props) {
-    super(props)
-    this.state = { jobs: [] }
-  }
+  useEffect(() => {
+    async function get_jobs() {
+        console.log('in get_jobs')
+      let response = await fetch('http://192.168.1.2:8000/jobs/')
+      let jobs_json = await response.json()
+      setJobs(Array.from(jobs_json))
+    }
+    get_jobs()
+  }, [])
 
-  componentDidMount() {
-    this.get_jobs().then(j => {
-      this.setState({ jobs: j })
-    })
-  }
-
-  get_jobs = async () => {
-    let response = await fetch('http://localhost:8000/jobs/')
-    let jobs_json = await response.json()
-    return Array.from(jobs_json)
-  }
-
-  render() {
-    return (
-      <StyledTimeline className={this.props.className}>
-        <h1>Experience</h1>
-        {this.state.jobs && this.state.jobs.map(job => (
+  return (
+    <div className={className}>
+      <h1>Experience</h1>
+      {jobs &&
+        jobs.map(job => (
           <article
-            key={new Date(job.begin).toLocaleString('default', { month: 'short' }) + new Date(job.begin).toLocaleString('default', { year: 'numeric' })}
-            className='timeline__item animate-on-scroll'
+            key={new Date(`${job.begin}`)
+              .toLocaleDateString('en-US', { month: 'short', year: 'numeric' })
+              .replace(' ', '')}
+            className="timeline__item animate-on-scroll"
           >
             <div className="inner">
               <span className="timeline__date">
-                <span className="timeline__month">{new Date(job.begin).toLocaleString('default', { month: 'short' })}</span>
-                <span className="timeline__year">{new Date(job.begin).toLocaleString('default', { year: 'numeric' })}</span>
+                <span className="timeline__month">
+                  {new Date(job.begin).toLocaleDateString('en-US', {
+                    month: 'short',
+                  })}
+                </span>
+                <span className="timeline__year">
+                  {new Date(job.begin).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                  })}
+                </span>
               </span>
               <div className="timeline__card">
-                <h2 className='timeline__card-title'>
-                  {job.company
-                    ? `${job.title} at ${job.company}`
-                    : `${job.title}`}
+                <h2 className="timeline__card-title">
+                  {`${job.title} at ${job.company}`}
                   <br />
-                  <small className='timeline__card-title--small'>
-                    {new Date(job.begin).toLocaleDateString()} - {job.end ? new Date(job.end).toLocaleDateString() : 'present'}
+                  <small className="timeline__card-title--small">
+                    {new Date(job.begin).toLocaleDateString('en-US')} -{' '}
+                    {job.end
+                      ? new Date(job.end).toLocaleDateString('en-US')
+                      : 'present'}
                   </small>
                 </h2>
                 <p>{job.description}</p>
@@ -50,47 +55,11 @@ export default class Timeline extends React.Component {
             </div>
           </article>
         ))}
-      </StyledTimeline>
-    )
-  }
-
+    </div>
+  )
 }
 
-/* const Timeline = ({ className }) => (
-  <div className={className}>
-    <h1>Experience</h1>
-    {siteConfig.jobs && siteConfig.jobs.map(job => (
-      <article
-        key={job.begin.month + job.begin.year}
-        className='timeline__item animate-on-scroll'
-      >
-        <div className="inner">
-          <span className="timeline__date">
-            <span className="timeline__month">{job.begin.month}</span>
-            <span className="timeline__year">{job.begin.year}</span>
-          </span>
-          <div className="timeline__card">
-            <h2 className='timeline__card-title'>
-              {job.company
-                ? `${job.occupation} at ${job.company}`
-                : `${job.occupation}`}
-              <br />
-              <small className='timeline__card-title--small'>
-                ({job.duration || 'present'})
-              </small>
-            </h2>
-            <p>{job.description}</p>
-          </div>
-        </div>
-      </article>
-    ))}
-  </div>
-) */
-
-
-
-const StyledTimeline = styled.div`
-
+export default styled(Timeline)`
   position: relative;
   :before {
     content: '';
@@ -165,7 +134,7 @@ const StyledTimeline = styled.div`
     position: absolute;
     top: -5px;
     left: 30%;
-    width: 10px; 
+    width: 10px;
     height: 10px;
     transform: rotate(-45deg);
   }
@@ -177,7 +146,7 @@ const StyledTimeline = styled.div`
     color: ${({ theme }) => theme.colors.fontColor};
     border-radius: 0 0 6px 6px;
   }
-  .timeline__item:nth-child(2n+2) div.inner {
+  .timeline__item:nth-child(2n + 2) div.inner {
     float: right;
     .timeline__card {
       transform: translate(50%);
@@ -189,24 +158,20 @@ const StyledTimeline = styled.div`
   .timeline__card-title:after {
     background: ${({ theme }) => theme.colors.secondary};
   }
-
   .timeline__card-title--small {
     font-size: 10px;
   }
-
   .timeline__item.is-visible div.inner {
     .timeline__card {
-      transition: transform .8s ease-in;
+      transition: transform 0.8s ease-in;
       transform: translate(0);
     }
   }
-
   ${p => config(p).media['sm']`
   .timeline__item div.inner {
     width: 40%;
     margin: 5px 0 0 0;
   }
-
   .timeline__item div.inner h2:after {
     top: 20px;
     left: unset;
@@ -215,6 +180,5 @@ const StyledTimeline = styled.div`
   .timeline__item:nth-child(2n+2) div.inner h2:after {
     left: -5px;
   }
-
   `}
 `

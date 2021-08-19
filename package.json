@@ -1,7 +1,7 @@
 {
   "name": "rbwrightjr91.github.io",
   "description": "Personal Website",
-  "version": "0.0.2",
+  "version": "2.1.0",
   "author": "Richard Wright <me@rbwrightjr91.dev>",
   "dependencies": {
     "@loadable/component": "5.12.0",
@@ -25,7 +25,8 @@
     "react-icons": "3.10.0",
     "react-switch": "5.0.1",
     "simple-json-fetch": "1.0.1",
-    "styled-components": "5.1.1"
+    "styled-components": "~5.1.1",
+    "svelte": "^3.42.1"
   },
   "keywords": [
     "gatsby"
