@@ -1,0 +1,15 @@
+{
+ "include": ["**/*.ts"],
+ "exclude": ["node_modules/*", "dist"],
+ "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["es6", "dom"],
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "types": ["svelte"]
+ }
+}
