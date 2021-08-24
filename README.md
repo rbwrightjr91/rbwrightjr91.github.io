@@ -1,3 +1,9 @@
-# rbwrightjr91.dev
+# [rbwrightjr91.dev](https://rbwrightjr91.dev)
 
-Personal website written in Svelte
+Svelte re-write of personal website
+
+## Tools
+
+- [Svelte](https://svelte.dev)
+- TypeScript
+- WebPack
