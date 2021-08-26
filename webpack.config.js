@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const svelteConfig = require('./svelte.config')
 
@@ -9,7 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        //publicPath: './',
+        assetModuleFilename: 'bundle.css',
     },
     module: {
         rules: [
@@ -30,8 +31,12 @@ module.exports = {
                     {
                         loader: 'svelte-loader',
                         options: {
-                            ...svelteConfig
-                        }
+                            ...svelteConfig,
+                            compilerOptions: {
+                                dev: true,
+                            },
+                            hotReload: true,
+                        },
                     }
                 ]
             },
@@ -43,13 +48,9 @@ module.exports = {
                 use: { loader: 'babel-loader' }
             },
             {
-                test: /\.(scss|sass|css)$/i,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
-                ],
-            }, 
+                test: /\.scss$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+            }
         ]
     },
     resolve: {
@@ -60,6 +61,7 @@ module.exports = {
         mainFields: ['svelte', 'browser', 'module', 'main']
     },
     plugins: [
+        new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'public/index.html')
         }),
@@ -70,6 +72,7 @@ module.exports = {
         },
         compress: true,
         port: 3000,
+        hot: true
         
-    }
+    },
 }
