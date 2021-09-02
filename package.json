@@ -36,6 +36,8 @@
   "type": "module",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "svelte-awesome": "^2.3.2"
   }
 }

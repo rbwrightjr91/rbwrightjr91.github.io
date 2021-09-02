@@ -1,20 +1,36 @@
 <script context="module" lang="ts">
     import type { IconDefinition } from '@fortawesome/free-brands-svg-icons'
+
+    const PRIMARY = '#00adb5'
 </script>
 
 
 <script lang="ts">
-    export let icon: IconDefinition
+    export let icon: {iconDef: IconDefinition, color: string}
+    export let altIconDef: IconDefinition | undefined = undefined
     export let dimension: number = 32
 
-    console.log(icon)
+    let fillColor = PRIMARY
+    let icn = icon.iconDef
+
+    const handleMouseOver = () => {
+        if(altIconDef) { icn = altIconDef }
+        fillColor = icon.color
+    }
+
+    const handleMouseLeave = () => {
+        if(altIconDef) { icn = icon.iconDef }
+        fillColor = PRIMARY
+    }
 </script>
 
+<span on:mouseover={handleMouseOver} on:mouseleave={handleMouseLeave}>
 {@html `
     <svg role="img" viewbox="0 0 512 512" height="${dimension}" width="${dimension}">
         <g>
-            <path d="${icon.icon[4]}" />
+        <path fill="${fillColor}" d="${icn.icon[4]}" />
         </g>
     </svg>
-`}
+    `}
+</span>
 
