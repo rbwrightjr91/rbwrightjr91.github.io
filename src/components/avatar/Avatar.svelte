@@ -5,7 +5,10 @@
 </script>
 
 <div>
-    <img {src} {alt} /> 
+    <img {src} {alt} />
+    <span>
+        <slot />
+    </span>
 </div>
 
 <style lang="scss">

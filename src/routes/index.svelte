@@ -38,10 +38,11 @@
 {#if visible}
     <Hero title="Richard Wright" />
     <Wrapper>
-        <Avatar src='../../static/images/avatar.jpeg' alt="Selfie of Richard" />
-        {#each socials as social}
-            <a href={social.url} target="_blank"><Icon icon={ social.icon } altIconDef={social.icon.altIconDef} /></a> 
-        {/each}
+        <Avatar src='../../static/images/avatar.jpeg' alt="Selfie of Richard">
+            {#each socials as social}
+                <a href={social.url} target="_blank"><Icon icon={ social.icon } altIconDef={social.icon.altIconDef} /></a> 
+            {/each}
+        </Avatar>    
     </Wrapper>
 {:else}
     <div class:visible={!visible}></div>
