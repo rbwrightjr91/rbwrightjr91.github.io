@@ -13,20 +13,20 @@
     let fillColor = PRIMARY
     let icn = icon.iconDef
 
-    const handleMouseOver = () => {
+    const handleFocus = () => {
         if(altIconDef) { icn = altIconDef }
         fillColor = icon.color
     }
 
-    const handleMouseLeave = () => {
+    const handleBlur = () => {
         if(altIconDef) { icn = icon.iconDef }
         fillColor = PRIMARY
     }
 </script>
 
-<span on:mouseover={handleMouseOver} on:mouseleave={handleMouseLeave}>
-{@html `
-    <svg role="img" viewbox="0 0 512 512" height="${dimension}" width="${dimension}">
+<span on:mouseover={handleFocus} on:mouseleave={handleBlur} on:focus={handleFocus} on:blur={handleBlur}>
+    {@html 
+    `<svg role="img" viewbox="0 0 512 512" height="${dimension}" width="${dimension}">
         <g>
         <path fill="${fillColor}" d="${icn.icon[4]}" />
         </g>
