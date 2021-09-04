@@ -36,6 +36,9 @@ module.exports = {
                                 dev: true,
                             },
                             hotReload: true,
+                            hotOptions: {
+                                noReload: true
+                            },
                         },
                     }
                 ]

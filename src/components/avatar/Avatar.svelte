@@ -1,5 +1,8 @@
-<script lang="ts">
+<script context="module" lang="ts">
+    import Socials from '../socials/Socials.svelte'
+</script>
 
+<script lang="ts">
     export let src: string
     export let alt: string
 </script>
@@ -7,7 +10,7 @@
 <div>
     <img {src} {alt} />
     <span>
-        <slot />
+        <Socials />
     </span>
 </div>
 

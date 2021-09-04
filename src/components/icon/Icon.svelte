@@ -24,7 +24,7 @@
     }
 </script>
 
-<span on:mouseover={handleFocus} on:mouseleave={handleBlur} on:focus={handleFocus} on:blur={handleBlur}>
+<span on:mouseover={handleFocus} on:mouseleave={handleBlur}>
     {@html 
     `<svg role="img" viewbox="0 0 512 512" height="${dimension}" width="${dimension}">
         <g>
