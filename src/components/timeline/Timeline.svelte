@@ -2,7 +2,7 @@
   import { onMount } from 'svelte'
   import { writable } from 'svelte/store'
 
-  const apiUrl = 'http://localhost:8000'
+  const apiUrl = 'http://192.168.1.2:8000'
 
   type Job = {
     company: string
@@ -16,18 +16,15 @@
 <script lang="ts">
   const jobData = writable<Job[]>([])
 
-  $: console.log($jobData)
-
   onMount(async () => {
-    fetch(`${apiUrl}/jobs`)
-      .then((res) => {
-        console.log(res)
-        res.json()
-      })
+    fetch(`${apiUrl}/jobs/`)
+      .then((response) => response.json())
       .then((data) => {
-        //jobData.set(data)
-        console.log(data)
+        jobData.set(data)
       })
-      .catch((e) => console.error(e))
+      .catch((error) => {
+        console.error(error)
+        return []
+      })
   })
 </script>
