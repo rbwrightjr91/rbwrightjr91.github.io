@@ -1,37 +1,56 @@
 <script context="module" lang="ts">
-    import { onMount } from 'svelte'
-    
-    import Hero from '../components/hero/Hero.svelte'
-    import Wrapper from '../components/wrapper/Wrapper.svelte'
-    import Avatar from '../components/avatar/Avatar.svelte'
-    import Skills from '../components/skills/Skills.svelte'
+  import { onMount } from 'svelte'
+
+  import Hero from '../components/hero/Hero.svelte'
+  import Wrapper from '../components/wrapper/Wrapper.svelte'
+  import Avatar from '../components/avatar/Avatar.svelte'
+  import Skills from '../components/skills/Skills.svelte'
+  import Timeline from '../components/timeline/Timeline.svelte'
 </script>
 
 <script lang="ts">
-    
-    let visible = false
+  let visible = false
 
-    onMount(() => visible = true)
-
+  onMount(() => (visible = true))
 </script>
 
 {#if visible}
-    <Hero title="Richard Wright" />
-    <Wrapper>
-        <Avatar src='../../static/images/avatar.jpeg' alt="Selfie of Richard" />
-        <ul>
-            <li>
-                <h1>About</h1>
-                <p>I'm currently a Software Developer at <a href="https://pluralsight.com" target="_blank">Pluralsight</a>. In May 2019 I graduated Cum Laude from California State University, Sacramento with a Bachelor of Science in Computer Science and a certificate in Game Engineering. Some of my hobbies include <a href="https://www.goodreads.com/user/show/16552310-richard-wright" target="_blank">reading books</a> and blogs, <a href="https://open.spotify.com/user/123095168?si=q24pdybvRneL2V-VxLWRcg" target="_blank">listening to music</a>, playing board and video games, and watching sports (hockey and baseball being my favorites).</p>
-            </li>
-            <li>
-                <Skills />
-            </li>
-        </ul>
-    </Wrapper>
+  <Hero title="Richard Wright" />
+  <Wrapper>
+    <Avatar src="../../static/images/avatar.jpeg" alt="Selfie of Richard" />
+    <ul>
+      <li>
+        <h1>About</h1>
+        <p>
+          I'm currently a Software Developer at <a
+            href="https://pluralsight.com"
+            target="_blank">Pluralsight</a
+          >. In May 2019 I graduated Cum Laude from California State University,
+          Sacramento with a Bachelor of Science in Computer Science and a
+          certificate in Game Engineering. Some of my hobbies include
+          <a
+            href="https://www.goodreads.com/user/show/16552310-richard-wright"
+            target="_blank">reading books</a
+          >
+          and blogs,
+          <a
+            href="https://open.spotify.com/user/123095168?si=q24pdybvRneL2V-VxLWRcg"
+            target="_blank">listening to music</a
+          >, playing board and video games, and watching sports (hockey and
+          baseball being my favorites).
+        </p>
+      </li>
+      <li>
+        <Skills />
+      </li>
+    </ul>
+    <hr />
+    <Timeline />
+  </Wrapper>
 {:else}
-    <div class:visible={!visible}></div>
+  <div class:visible={!visible} />
 {/if}
+
 <style lang="scss">
-    @use './index.scss'
+  @use './index.scss';
 </style>
