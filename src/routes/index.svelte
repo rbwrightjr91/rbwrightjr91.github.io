@@ -17,13 +17,13 @@
 {#if visible}
   <Hero title="Richard Wright" />
   <Wrapper>
-    <Avatar src="../../static/images/avatar.jpeg" alt="Selfie of Richard" />
+    <Avatar src="src/static/images/avatar.jpeg" alt="Selfie of Richard" />
     <ul>
       <li>
         <h1>About</h1>
         <p>
           I'm currently a Software Developer at <a
-            href="https://pluralsight.com"
+            href="https://www.pluralsight.com"
             target="_blank">Pluralsight</a
           >. In May 2019 I graduated Cum Laude from California State University,
           Sacramento with a Bachelor of Science in Computer Science and a

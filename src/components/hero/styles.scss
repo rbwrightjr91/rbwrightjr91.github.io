@@ -1,27 +1,27 @@
 div {
-    background-image: url('../../../static/images/cover.jpeg');
-    height: 70vh;
-    background-attachment: fixed;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: table;
+  background-image: url('src/static/images/cover.jpeg');
+  height: 70vh;
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: table;
+  width: 100%;
+  overflow: hidden;
+
+  div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
     width: 100%;
-    overflow: hidden;
 
-    div {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        width: 100%;
-
-        h1 {
-            font-weight: 700;
-            font-size: 3rem;
-            margin: 10px 60px;
-            color: #fff;
-            text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
-        }
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      margin: 10px 60px;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
     }
+  }
 }
