@@ -8,7 +8,7 @@ const config = {
   preprocess: vitePreprocess(),
 
   kit: {
-    adapter: adapter({ pages: 'static', assets: 'static' }),
+    adapter: adapter({ pages: 'dist', assets: 'dist' }),
   },
 }
 
