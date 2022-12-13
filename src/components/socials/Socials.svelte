@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script lang="ts">
   import {
     faGitlab,
     faGithub,
@@ -51,7 +51,7 @@
 </script>
 
 {#each socials as social}
-  <a href={social.url} target="_blank"
+  <a href={social.url} target="_blank" rel="noreferrer"
     ><Icon icon={social.icon} altIconDef={social.icon.altIconDef} /></a
   >
 {/each}

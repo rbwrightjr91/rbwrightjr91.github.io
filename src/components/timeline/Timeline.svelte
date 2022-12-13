@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script lang="ts">
   import { onMount } from 'svelte'
   import { writable } from 'svelte/store'
 
@@ -12,9 +12,7 @@
     title: string
     description?: string
   }
-</script>
 
-<script lang="ts">
   const jobData = writable<Job[]>([])
 
   onMount(async () => {
