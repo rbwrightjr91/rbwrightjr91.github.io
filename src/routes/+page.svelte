@@ -15,7 +15,7 @@
 {#if visible}
   <Hero title="Richard Wright" />
   <Wrapper>
-    <Avatar src="src/static/images/avatar.jpeg" alt="Selfie of Richard" />
+    <Avatar src="/images/avatar.jpeg" alt="Selfie of Richard" />
     <ul>
       <li>
         <h1>About</h1>
