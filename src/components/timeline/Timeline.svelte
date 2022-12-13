@@ -1,68 +1,69 @@
 <script lang="ts">
+  import type { Job } from '../../config'
+
   import { onMount } from 'svelte'
   import { writable } from 'svelte/store'
 
-  const apiUrl = 'http://localhost:5001'
+  import {
+    Timeline,
+    TimelineItem,
+    TimelineSeparator,
+    TimelineDot,
+    TimelineConnector,
+    TimelineContent,
+    TimelineOppositeContent,
+  } from 'svelte-vertical-timeline'
 
-  type Job = {
-    id: number
-    company: string
-    begin: string
-    end?: string
-    title: string
-    description?: string
+  import { jobs } from '../../config'
+
+  const parseDate = (date?: string): string => {
+    if (!date) return 'Current'
+
+    const d = new Date(date)
+    return `${d.toLocaleDateString('us-EN', {
+      month: 'short',
+    })} ${d.toLocaleDateString('us-EN', { year: 'numeric' })}`
   }
 
   const jobData = writable<Job[]>([])
 
   onMount(async () => {
-    fetch(`${apiUrl}/jobs/`)
-      .then((response) => response.json())
-      .then((data: Job[]) => {
-        jobData.set(data.reverse())
-      })
-      .catch((error) => {
-        console.error(error)
-        return []
-      })
+    jobData.set(jobs)
   })
 </script>
 
-<div class="timeline">
-  {#if $jobData}
-    <h1>Experience</h1>
+{#if $jobData}
+  <h1>Experience</h1>
+  <Timeline position="alternate">
     {#each $jobData as job}
-      <article class="timeline__item">
-        <div class="inner">
-          <span class="date">
-            <span class="month">
-              {new Date(job.begin).toLocaleDateString('us-EN', {
-                month: 'short',
-              })}
-            </span>
-            <span class="year">
-              {new Date(job.begin).toLocaleDateString('us-EN', {
-                year: 'numeric',
-              })}
-            </span>
-          </span>
-          <div class="card">
-            <h2>
-              {job.title} @ {job.company}
-              <br />
-              <small>
-                {new Date(job.begin).toLocaleDateString('en-US')} - {job.end
-                  ? new Date(job.end).toLocaleDateString('en-US')
-                  : 'present'}
-              </small>
-            </h2>
-            {#if job.description}<p>{job.description}</p>{/if}
-          </div>
-        </div>
-      </article>
+      <TimelineItem>
+        <TimelineOppositeContent
+          slot="opposite-content"
+          style="font-size:xx-large; color: #00adb5;"
+        >
+          {new Date(job.begin).getFullYear()}
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot style="background: #00adb5; border-color: #00adb5;" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent style="padding-bottom:20px;">
+          {job.title}
+          <small
+            ><hr />
+            <em
+              >{job.company} <br />
+              {parseDate(job.begin)} - {parseDate(job.end)}</em
+            ></small
+          >
+          <br />
+          <br />
+          <small>{job.description}</small>
+        </TimelineContent>
+      </TimelineItem>
     {/each}
-  {/if}
-</div>
+  </Timeline>
+{/if}
 
 <style lang="scss">
   @use './styles.scss';

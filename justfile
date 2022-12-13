@@ -1,5 +1,8 @@
-dev:
+dev: 
   npm run dev
 
-build:
-  docker build .
+build: 
+  docker-compose build
+
+start: 
+  docker-compose up

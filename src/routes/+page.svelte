@@ -6,6 +6,7 @@
   import Avatar from '../components/avatar/Avatar.svelte'
   import Skills from '../components/skills/Skills.svelte'
   import Timeline from '../components/timeline/Timeline.svelte'
+  import Footer from '../components/footer/Footer.svelte'
 
   let visible = false
 
@@ -47,6 +48,8 @@
     </ul>
     <hr />
     <Timeline />
+    <hr />
+    <Footer />
   </Wrapper>
 {:else}
   <div class:visible={!visible} />
