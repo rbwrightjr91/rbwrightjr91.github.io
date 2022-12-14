@@ -1,0 +1,48 @@
+{
+  "name": "rbwrightjr91.github.io",
+  "description": "Personal Website",
+  "version": "3.0.0",
+  "author": "Richard Wright <me@rbwrightjr91.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rbwrightjr91/rbwrightjr91.github.io"
+  },
+  "scripts": {
+    "dev": "vite dev",
+    "build": "rm -rf ./build && NODE_ENV=production vite build",
+    "deploy": "npx gh-pages -d build -b master",
+    "preview": "vite preview",
+    "publish": "npm run deploy",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write .",
+    "start": "node build/index.js"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "prettier": "^2.8.0",
+    "prettier-plugin-svelte": "^2.8.1",
+    "sass": "^1.56.2",
+    "svelte": "^3.54.0",
+    "svelte-check": "^2.9.2",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "svelte-awesome": "^2.4.6",
+    "svelte-vertical-timeline": "^0.0.2"
+  }
+}
