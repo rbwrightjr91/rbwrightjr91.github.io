@@ -7,6 +7,7 @@
   import Skills from '../components/skills/Skills.svelte'
   import Timeline from '../components/timeline/Timeline.svelte'
   import Footer from '../components/footer/Footer.svelte'
+  import { base } from '$app/paths'
 
   let visible = false
 
@@ -16,7 +17,7 @@
 {#if visible}
   <Hero title="Richard Wright" />
   <Wrapper>
-    <Avatar src="/images/avatar.jpeg" alt="Selfie of Richard" />
+    <Avatar src="{base}/images/avatar.jpeg" alt="Selfie of Richard" />
     <ul>
       <li>
         <h1>About</h1>
