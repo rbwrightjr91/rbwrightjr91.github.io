@@ -3,7 +3,7 @@
     <em><small>v3.0.0;</small></em>
   </div>
   <div>
-    <em><small> Written in Svelte; </small></em>
+    <em><small> Created with SvelteKit; </small></em>
   </div>
   <div>
     <em

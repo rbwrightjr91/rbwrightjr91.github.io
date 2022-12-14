@@ -1,8 +1,14 @@
 dev: 
   npm run dev
 
-build: 
+build:
+  npm run build
+
+publish:
+  npm run publish
+
+docker-build: 
   docker-compose build
 
-start: 
+docker-start: 
   docker-compose up
