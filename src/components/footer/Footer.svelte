@@ -1,8 +1,11 @@
-<div class="container">
-  <div class="inner">
+<div>
+  <div>
+    <em><small>v3.0.0;</small></em>
+  </div>
+  <div>
     <em><small> Written in Svelte; </small></em>
   </div>
-  <div class="inner">
+  <div>
     <em
       ><small>
         Design inspired by: Gatsby Starter CV by Santos Francisco;</small
