@@ -28,26 +28,6 @@ a {
     color: #00adb5;
 }
 
-ul {
-    list-style: none;
-	padding: 0;
-	margin: 0.5rem;
-	display: flex;
-
-    li {
-        padding: 0.5rem;
-		flex: 1 1 50%;
-		min-width: 200px;
-    }
-}
-
-hr {
-  margin-top: 24px;
-  margin-bottom: 16px;
-  background-color: #fff;
-  opacity: .2;
-}
-
 .visible {
     height: 9999px;
     width: 100%;

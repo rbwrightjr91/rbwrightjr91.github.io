@@ -14,8 +14,11 @@
 </script>
 
 <div>
-  <h1>Skills</h1>
   {#each skills as skill}
     <SkillBar {skill} />
   {/each}
 </div>
+
+<style lang="scss">
+  @use './styles.scss';
+</style>

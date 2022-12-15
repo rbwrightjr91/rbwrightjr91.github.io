@@ -8,6 +8,7 @@
   import Timeline from '../components/timeline/Timeline.svelte'
   import Footer from '../components/footer/Footer.svelte'
   import { base } from '$app/paths'
+  import Section from '../components/section/Section.svelte'
 
   let visible = false
 
@@ -17,10 +18,14 @@
 {#if visible}
   <Hero title="Richard Wright" />
   <Wrapper>
-    <Avatar src="{base}/images/avatar.jpeg" alt="Selfie of Richard" />
-    <ul>
-      <li>
-        <h1>About</h1>
+    <Section
+      ><Avatar
+        src="{base}/images/avatar.jpeg"
+        alt="Selfie of Richard"
+      /></Section
+    >
+    <Section header="About" divider>
+      <div>
         <p>
           I'm currently a Software Developer at <a
             href="https://www.pluralsight.com"
@@ -42,15 +47,13 @@
           >, playing board and video games, and watching sports (hockey and
           baseball being my favorites).
         </p>
-      </li>
-      <li>
-        <Skills />
-      </li>
-    </ul>
-    <hr />
-    <Timeline />
-    <hr />
-    <Footer />
+      </div>
+    </Section>
+    <Section header="Skills" divider>
+      <Skills />
+    </Section>
+    <Section header="Experience" divider><Timeline /></Section>
+    <Section><Footer /></Section>
   </Wrapper>
 {:else}
   <div class:visible={!visible} />
