@@ -7,9 +7,7 @@
 
 <div>
   <img {src} {alt} />
-  <span>
-    <Socials />
-  </span>
+  <Socials />
 </div>
 
 <style lang="scss">

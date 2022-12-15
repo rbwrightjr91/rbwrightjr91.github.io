@@ -1,15 +1,17 @@
+<script lang="ts">
+  import Socials from '../socials/Socials.svelte'
+  import FooterItem from './FooterItem.svelte'
+</script>
+
 <div>
-  <div>
-    <em><small>v3.0.0;</small></em>
-  </div>
-  <div>
-    <em><small> Created with SvelteKit; </small></em>
-  </div>
-  <div>
-    <em
-      ><small>
-        Design inspired by: Gatsby Starter CV by Santos Francisco;</small
-      ></em
-    >
-  </div>
+  <FooterItem inner="v3.0.0;" />
+  <FooterItem inner="Created with SvelteKit;" />
+  <FooterItem
+    inner="Design inspired by: Gatsby Starter CV by Santos Francisco;"
+  />
+  <Socials />
 </div>
+
+<style lang="scss">
+  @use './styles.css';
+</style>
