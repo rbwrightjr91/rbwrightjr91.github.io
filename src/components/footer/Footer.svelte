@@ -4,7 +4,7 @@
 </script>
 
 <div>
-  <FooterItem inner="v3.0.0;" />
+  <FooterItem inner="v3.1;" />
   <FooterItem inner="Created with SvelteKit;" />
   <FooterItem
     inner="Design inspired by: Gatsby Starter CV by Santos Francisco;"
@@ -13,5 +13,5 @@
 </div>
 
 <style lang="scss">
-  @use './styles.css';
+  @use './styles.scss';
 </style>
