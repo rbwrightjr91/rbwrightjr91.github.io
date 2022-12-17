@@ -1,0 +1,13 @@
+div {
+    display: flex;
+    // align-items: var(--centerSection);
+    flex-direction: column;
+}
+
+hr {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    opacity: .4;
+    align-self: flex-start;
+}

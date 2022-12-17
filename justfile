@@ -7,9 +7,6 @@ build:
 preview:
   npm run build && npm run preview
 
-publish:
-  npm run publish
-
 docker-build: 
   docker-compose build
 

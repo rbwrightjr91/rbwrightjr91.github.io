@@ -33,7 +33,6 @@
 </script>
 
 {#if $jobData}
-  <h1>Experience</h1>
   <Timeline position="alternate">
     {#each $jobData as job}
       <TimelineItem>

@@ -50,11 +50,13 @@
   ]
 </script>
 
-{#each socials as social}
-  <a href={social.url} target="_blank" rel="noreferrer"
-    ><Icon icon={social.icon} altIconDef={social.icon.altIconDef} /></a
-  >
-{/each}
+<div>
+  {#each socials as social}
+    <a href={social.url} target="_blank" rel="noreferrer"
+      ><Icon icon={social.icon} altIconDef={social.icon.altIconDef} /></a
+    >
+  {/each}
+</div>
 
 <style lang="scss">
   @use './styles.scss';

@@ -1,7 +1,7 @@
 {
   "name": "rbwrightjr91.github.io",
   "description": "Personal Website",
-  "version": "3.0.0",
+  "version": "3.1",
   "author": "Richard Wright <me@rbwrightjr91.dev>",
   "license": "MIT",
   "repository": {
@@ -28,6 +28,7 @@
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
+    "mdsvex": "^0.10.6",
     "prettier": "^2.8.0",
     "prettier-plugin-svelte": "^2.8.1",
     "sass": "^1.56.2",
