@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
 
-  import Hero from '../components/hero/Hero.svelte'
   import Wrapper from '../components/wrapper/Wrapper.svelte'
   import Avatar from '../components/avatar/Avatar.svelte'
   import Skills from '../components/skills/Skills.svelte'
@@ -18,7 +17,6 @@
 </script>
 
 {#if visible}
-  <Hero title="Richard Wright" />
   <Wrapper>
     <Section
       ><Avatar
