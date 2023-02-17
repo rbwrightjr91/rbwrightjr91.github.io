@@ -57,7 +57,13 @@
           >
           <br />
           <br />
-          <small>{job.description}</small>
+          {#if job.description}
+            {#each job.description as desc}
+              <small>{desc}</small>
+              <br />
+              <br />
+            {/each}
+          {/if}
         </TimelineContent>
       </TimelineItem>
     {/each}
