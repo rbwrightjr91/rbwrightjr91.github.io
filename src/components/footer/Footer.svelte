@@ -1,10 +1,12 @@
 <script lang="ts">
   import Socials from '../socials/Socials.svelte'
   import FooterItem from './FooterItem.svelte'
+
+  const VERSION = '3.2'
 </script>
 
 <div>
-  <FooterItem inner="v3.1;" />
+  <FooterItem inner="v{VERSION};" />
   <FooterItem inner="Created with SvelteKit;" />
   <FooterItem
     inner="Design inspired by: Gatsby Starter CV by Santos Francisco;"
